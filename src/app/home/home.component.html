@@ -1,0 +1,37 @@
+<div class="spinner">
+  <mat-progress-spinner diameter="40" mode="indeterminate" style="margin:0 auto; margin-top: 20%" *ngIf="!covid19Data">
+  </mat-progress-spinner>
+</div>
+
+<div class="covid-cotainer">
+  <div class="covid-card" *ngIf="covid19Data">
+    <mat-card class="country-card">
+      <mat-card-header>
+        <mat-card-title>India</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="item-card">
+        <mat-list>
+          <mat-list-item class="common-styling confirmed">Confirmed: {{covid19Data.countryCofirmed}}</mat-list-item>
+          <mat-list-item class="common-styling active">Active: {{covid19Data.countryActive}}</mat-list-item>
+          <mat-list-item class="common-styling recovered">Recovered: {{covid19Data.countryRecovered}}</mat-list-item>
+          <mat-list-item class="common-styling deceased">Deceased: {{covid19Data.counntryDeceased}}</mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="covid-card" *ngFor="let item of covid19Data ? covid19Data.states : []">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{item.state}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="item-card">
+        <mat-list>
+          <mat-list-item class="common-styling confirmed">Confirmed: {{item.confirmed}}</mat-list-item>
+          <mat-list-item class="common-styling active">Active: {{item.active}}</mat-list-item>
+          <mat-list-item class="common-styling recovered">Recovered: {{item.recovered}}</mat-list-item>
+          <mat-list-item class="common-styling deceased">Deceased: {{item.deceased}}</mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

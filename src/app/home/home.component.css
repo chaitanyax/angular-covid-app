@@ -1,0 +1,73 @@
+.covid-cotainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.covid-card {
+  padding: 10px;
+  width: 25%;
+}
+
+.confirmed {
+  color: red;
+  margin-bottom: 1em;
+  background: rgba(255, 0, 0, 0.1);
+  padding: 6px 0; 
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.common-styling {
+  padding: 6px 0; 
+  margin-bottom: 1em;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.active {
+  color: blue;
+  background: rgba(0, 0, 255, 0.1);
+  
+}
+.recovered {
+  color: green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.deceased {
+  color: black;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.country-card {
+  background-color: #fdf5ec;
+}
+
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .covid-card {
+      width: 50%;
+    }
+    .covid19-countryData,
+    .covid19-stateData {
+      padding: 1.5em;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .covid-card {
+      width: 100%;
+    }
+    .covid19-countryData,
+    .covid19-stateData {
+      padding: 1.5em;
+    }
+}

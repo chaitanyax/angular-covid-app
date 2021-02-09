@@ -1,0 +1,8 @@
+<div class="container">
+    <ul class="nav nav-tabs">
+      <li> <a [className]="activeTab === 'home' ? 'active' : ''" (click)="makeActive('home')" routerLink='home'>Home</a></li>
+      <li> <a [className]="activeTab === 'updates' ? 'active' : ''" (click)="makeActive('updates')" routerLink='updates'>Updates</a></li>
+      <li> <a [className]="activeTab === 'charts' ? 'active' : ''" (click)="makeActive('charts')" routerLink='charts'>Charts</a></li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

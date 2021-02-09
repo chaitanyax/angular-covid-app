@@ -1,0 +1,17 @@
+<div class="spiner">
+    <mat-progress-spinner diameter="40" mode="indeterminate" style="margin:0 auto; margin-top: 20%" *ngIf="loading | async">
+    </mat-progress-spinner>
+</div>
+<div class="covi19LogDataContainer">
+    <div class="covidLogCard" *ngFor="let data of loadingLogData | async">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-subtitle>
+                    {{data.timestamp * 1000 | date:'dd-MMM-yyyy HH:mm'}}
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="mat-h2">{{data.update}} </mat-card-content>
+        </mat-card>
+    </div>
+    <h2 *ngIf="error | async">{{error}}</h2>
+</div>

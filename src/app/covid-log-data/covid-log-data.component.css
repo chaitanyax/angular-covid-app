@@ -1,0 +1,30 @@
+.covi19LogDataContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width:100%;
+    margin: 0 auto;
+}
+.covidLogCard {
+    padding: 1em;
+    width: 50%;
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .covidLogCard{
+        width: 100%;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .covidLogCard{
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+li a {
+    text-decoration: none;
+    font-weight: 550;  
+}
+
+li {
+    padding: 1em;
+}
+
+.nav-tabs .active {
+    border-bottom: 3px solid #007bff;
+    padding: 0 0 16px 0;
+}
+
+.container {
+    padding-bottom: 50vh;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+        padding-bottom: 100vh;
+    }
+}

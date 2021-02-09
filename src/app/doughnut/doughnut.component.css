@@ -1,0 +1,23 @@
+.covid19-Chart {
+    margin: 1.5em auto;
+   }
+.covid19-lineChart{
+    margin-top: 1em;
+  }
+.covid19-chartContainer{
+     display: flex;
+     justify-content: center;
+   }
+   
+.doughnut-chart {
+     width: 80%;
+   }
+
+.lineChart {
+    width: 80%;
+    margin: 0 auto;
+  }
+mat-slider {
+    width: 100%;
+  }
+

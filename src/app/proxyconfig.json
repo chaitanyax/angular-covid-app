@@ -1,0 +1,7 @@
+{
+    "/api": {
+        "target" : "https://www.bbc.com",
+        "secure" : false,
+        "changeOrigin": true
+    }
+}
